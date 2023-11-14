@@ -1,0 +1,147 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  background-color: aquamarine;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3em 0 3em;
+}
+header nav ul {
+  display: flex;
+  gap: 3em;
+}
+header a {
+  width: 30px;
+}
+.barra {
+  /* width: 0px; */
+  display: none;
+}
+.seccion-1 {
+  display: flex;
+  background-color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+.seccion-2 img {
+  width: 100%;
+}
+#foot {
+  padding: 1em;
+}
+footer {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+}
+footer h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+footer ul li {
+  font-weight: bold;
+}
+footer {
+  align-items: center;
+  justify-content: center;
+}
+footer a img {
+  width: 30px;
+  margin-left: 70rem;
+  margin-bottom: 20px;
+}
+.tarjetas {
+  display: flex;
+}
+.tarjetas div div {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.seccion-3 h2 {
+  padding: 1em;
+}
+.seccion-3 div img {
+  width: 200px;
+  border-radius: 18px;
+}
+.barra-abrir,
+.barra-cerrar {
+  display: none;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;  
+  background-color: antiquewhite;
+  width: 100%;
+}
+.cuerpo{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;  
+  border: solid 2px;
+  padding: 4rem; 
+  gap: 1rem; 
+  border-radius: 15px;
+  box-shadow: 3px 2px 1px 1px rgba(2, 198, 247, 0.3); 
+  width: 40%;
+  color: aquamarine;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.cuerpo input, textarea, button{
+  background-color: rgba(128, 128, 128, 0.484);
+  width: 100%;
+  padding: 6px;
+  border-radius: 10px;
+}
+button{
+  color:aquamarine;
+  font-size: 15px;
+  font-weight: bolder;
+}
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .barra-abrir,
+  .barra-cerrar {
+    display: block;
+  }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    /* display: none; */
+    position: absolute;
+    top: 8px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: aquamarine;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
